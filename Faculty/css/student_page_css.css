@@ -1,0 +1,192 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ 
+    header {
+        background-color: #6466A8;
+        text-align: center;
+        /* padding: 20px 0; */
+        position: fixed; /* Change to fixed */
+        width: 100%; /* Add width */
+        top: 0; /* Add top */
+        z-index: 1;
+        font-family: Bricolage Grotesque;
+        border-bottom: 3px solid black;
+        color: #ddd;
+    }
+ 
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logout-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar {
+    background-color: #0e0e10;
+    width:211px;
+    padding: 19px;
+    position: fixed;
+    top: 88px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    /* overflow-y: auto; Added */
+    max-height: calc(100vh - 100px); /* Added */
+    color: rgb(239, 229, 229);
+    opacity: 1;
+    font-size: 13px;
+
+    
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width:132px;
+    height: 141px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.profile p {
+    margin: 5px 0;
+  
+    padding: 5px;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: Bricolage Grotesque;
+    margin-top: 40px;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 10px; 
+    font-family: Bricolage Grotesque;
+    font-size: larger;
+    border-bottom: 2px solid white;
+    /* border-top: 2px solid white; */
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    padding:11px 6px; /* Adjusted */
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s; /* Added */
+    color: rgb(238, 219, 219);
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: darkblue;
+    color: white;
+    padding-left: 20px; /* Added */
+    padding-right: 30px; /* Added */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 280px;
+   
+}
+
+
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.sidebar {
+    /* Your existing sidebar styles */
+    transition: margin-left 0.3s ease; /* Added for smooth transition */
+}
+
+.sidebar-hidden {
+    margin-left: -350px; /* Adjust according to sidebar width */
+}
+
+/* //table section */
+/* Your existing CSS styles */
+
+.info-section {
+    margin-bottom: 20px;
+   
+    margin-top: 71px;
+    
+}
+
+.info-table {
+    width: calc(70% - 20px); /* Adjusted */
+    display: inline-block; /* Adjusted */
+    vertical-align: top; /* Adjusted */
+    border-collapse: collapse; /* Added */
+    margin-right: 20px; /* Added */
+    margin-top: 41px;
+    border: 1px solid #090808;
+    font-family: Bricolage Grotesque;
+    font-size: large;
+    font-weight: bold;
+    border-collapse: inherit;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-align: center;
+    
+   
+  
+}
+
+.info-table td {
+    /* Added */
+    padding: 20px; /* Added */
+    width: 500px;
+    background-color: rgb(215, 173, 173);
+}
+
+.info-table th {
+    background-color: white; /* Added */
+    border: 1px solid #ddd; /* Added */
+    padding: 10px; /* Added */
+    width: 500px;
+}
+
+
